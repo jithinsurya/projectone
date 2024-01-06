@@ -1,9 +1,148 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec3f792bb1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="IMAGES/LOGO.jpg" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SKILLS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX DESIGNER</p>
+                <h1>Hi, I'm <span>Jithinsurya</span><br>From Eluru</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMAGES/su.jpg" class="ab">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        Hii...
+                        My Name Is Simhadri Jithinsurya I'm From Andhra Pradesh And I Was PutUp In 'Eluru' Comming To My Qualification I Have A Bachelor's Degree In (EEE)Eletrical And Eletronic Engineering Lets Me Tell You About My Family Background I Have A Loving Family Of Four Members Talking About My Father He Is A ATM security guard And My Mother She Is A Homemaker.
+            
+                        i'm a Front-end Developer and UI/UX Designer and Graphic Designer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Achivements')">Achivements</p>
+                    </div>
 
-    </head>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Design</span><br>Designing banners,Posters,Brochures,Photos,etc</li>
+                            <li><span>Web Development</span><br>Designing website static or dynmanic</li>
 
-    <body>
-        <h1>sample project</h1>
-    </body>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020-2023</span><br>B.tech("Electrical and Electronics Engineering")</li>
+                            <li><span>2017-2020</span><br>Diploma("Electrical and Electronics Engineering")</li>
+                            <li><span>2016-2017</span><br>10th</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="Achivements">
+                        <ul>
+                            <li><span>Graphic Design</span><br>Designing banners,Posters,Brochures,Photos,etc</li>
+                            <li><span>Web Development</span><br>Designing website static or dynmanic</li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>sjhfhsdghagasjhdghjhduahkjnjkdajfdbhbasdbhjbHBDH
+                        DKuuidyasgdyuagsyudgayusugyugSY
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>sjhfhsdghagasjhdghjhduahkjnjkdajfdbhbasdbhjbHBDH
+                        DKuuidyasgdyuagsyudgayusugyugSY
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Web Design</h2>
+                    <p>sjhfhsdghagasjhdghjhduahkjnjkdajfdbhbasdbhjbHBDH
+                        DKuuidyasgdyuagsyudgayusugyugSY
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");     
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+            
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
 </html>
